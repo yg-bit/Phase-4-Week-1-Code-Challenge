@@ -4,6 +4,7 @@ from config import Config
 from models import db, Hero, Power, HeroPower
 
 
+
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
