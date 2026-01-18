@@ -51,7 +51,7 @@ class HeroPower(db.Model):
         errors = []
         if self.strength not in self.VALID_STRENGTHS:
             errors.append("strength must be one of 'Strong', 'Weak', 'Average'")
-        # ensure referenced hero and power exist will be handled in route when creating
+        
         return errors
 
     def to_dict(self):

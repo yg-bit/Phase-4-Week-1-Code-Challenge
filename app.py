@@ -23,7 +23,7 @@ def create_app():
         if not hero:
             return jsonify({'error': 'Hero not found'}), 404
 
-        # serialize hero with hero_powers including nested power
+        
         hp_list = []
         for hp in hero.hero_powers:
             hp_list.append({
